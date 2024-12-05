@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="f-direction" style="display: flex; gap: 20px; flex-direction: row; margin: auto">
+            <div class="container">
+                <h1>BMI Calculator</h1>
+                <h4>Jenis Kelamin</h4>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Pria</label>
+                <input type="radio" id="female" name="gender" value="female" checked />
+                <label for="female">Wanita</label>
+                <div class="mt-20">
+                    <h4>Berat Badan (kg)</h4>
+                    <div class="input-container">
+                        <span class="icon">✏️</span>
+                        <input id="weight" type="text" value="80" />
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <h4>Usia (tahun)</h4>
+                    <div class="input-container">
+                        <span class="icon">✏️</span>
+                        <input id="age" type="text" value="27" />
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <h4>Tinggi Badan (cm)</h4>
+                    <div class="input-container">
+                        <span class="icon">✏️</span>
+                        <input id="height" type="text" value="180" />
+                    </div>
+                </div>
+                <div style="flex: auto; margin-top: 20px">
+                    <button
+                        id="calculate-BMI"
+                        style="
+                            cursor: pointer;
+                            background-color: turquoise;
+                            color: white;
+                            width: 100px;
+                            border-radius: 5px;
+                            height: 30px;
+                            border: none;
+                        "
+                    >
+                        Hitung BMI
+                    </button>
+                    <button
+                        id="reset"
+                        style="cursor: pointer; width: 100px; border-radius: 5px; height: 30px; border: none"
+                    >
+                        Reset
+                    </button>
+                </div>
+            </div>
+            <div style="height: auto">
+                <div id="major-result" style="display: none">
+                    <div class="result-container">
+                        <h2 id="result-weight">Hitung Berat Badan Anda</h2>
+                        <h3 id="calculation">Hasil Kalkulasi</h3>
+                        <div id="conclusion" style="margin-bottom: 20px"></div>
+                        <button
+                            style="
+                                cursor: pointer;
+                                background-color: turquoise;
+                                color: white;
+                                width: 200px;
+                                border-radius: 5px;
+                                height: 30px;
+                                border: none;
+                            "
+                        >
+                            Download Hasil BMI
+                        </button>
+                    </div>
+                    <div style="margin-top: 20px">
+                        Hasil BMI di antara <span id="minus-1"></span> dan <span id="plus-1"></span>
+                    </div>
+                    <div id="result-disc"></div>
+                    <div style="flex: auto; margin-top: 20px">
+                        <button
+                            style="
+                                cursor: pointer;
+                                background-color: turquoise;
+                                color: white;
+                                width: 200px;
+                                border-radius: 5px;
+                                height: 30px;
+                                border: none;
+                                margin: 5px;
+                            "
+                        >
+                            Konsultasi Ahli Gizi Via Aplikasi
+                        </button>
+                        <button
+                            style="
+                                cursor: pointer;
+                                background-color: turquoise;
+                                color: white;
+                                width: 200px;
+                                border-radius: 5px;
+                                height: 30px;
+                                border: none;
+                                margin: 5px;
+                            "
+                        >
+                            Registrasi Online Ahli Gizi
+                        </button>
+                    </div>
+                </div>
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
+                    seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+                    berat badan Anda.
+                </p>
+                <div class="result-container">
+                    <h3>Beberapa Penyakit yang berasal dari kegemukan</h3>
+                    <h4>Diabetes</h4>
+                    <h4>Hipertensi</h4>
+                    <h4>Sakit Jantung</h4>
+                    <h4>Osteoarthritis</h4>
+                    <div style="flex: auto; margin-top: 20px">
+                        <button
+                            style="
+                                cursor: pointer;
+                                background-color: turquoise;
+                                color: white;
+                                width: 200px;
+                                border-radius: 5px;
+                                height: 30px;
+                                border: none;
+                                margin: 5px;
+                            "
+                        >
+                            Konsultasi Ahli Gizi Via Aplikasi
+                        </button>
+                        <button
+                            style="
+                                cursor: pointer;
+                                background-color: turquoise;
+                                color: white;
+                                width: 200px;
+                                border-radius: 5px;
+                                height: 30px;
+                                border: none;
+                                margin: 5px;
+                            "
+                        >
+                            Registrasi Online Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <div style="flex: auto; margin-top: 20px; text-align: center">
+                    <h3>Download Aplikasi</h3>
+                    <img
+                        src="https://w7.pngwing.com/pngs/110/123/png-transparent-iphone-ipad-android-google-play-now-button-electronics-text-logo-thumbnail.png"
+                        alt="#"
+                        style="width: 200px; height: 70px"
+                    />
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+                        alt="#"
+                        style="width: 200px; height: 70px"
+                    />
+                </div>
+                <div style="text-align: center; font-weight: bold; margin-top: 20px">Made By Ssy @2024</div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

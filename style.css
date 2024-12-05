@@ -1,0 +1,50 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: fit-content;
+    background-color: white;
+}
+
+.input-container .icon {
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 200px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-20 h4 {
+    margin-bottom: 5px;
+}
+.table {
+    margin: auto;
+    margin-top: 100px;
+}
+.container {
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+.result-container {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .f-direction {
+        flex-direction: column !important;
+    }
+}
